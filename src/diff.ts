@@ -5,19 +5,7 @@ const startingTags = ['{{1}}', '{{2}}', '☆', '⛬', '★', '☁', '☎']
 
 // const endingHtmlTags = ['<a>', '<abbr>', '<address>', '<area>', '</article>', '</aside>', '</b>', '</bdi>', '</bdo>', '</blockquote>', '</body>', '</button>', '</canvas>', '</caption>', '</cite>', '</code>', '</col>', '</colgroup>', '</data>', '</datalist>', '</dd>', '</del>', '</details>', '</dfn>', '</dialog>', '</div>', '</dl>', '</dt>', '</>', '</>', '</>', '</>', '</>', '</>', '</>', '</>', '</>', '</>', '</>', '</>', '</>', '</>',]
 
-const startingHtmlTags = [
-  '<html>',
-  '<body>',
-  '<p>',
-  '<h1>',
-  '<h2>',
-  '<h3>',
-  '<blockquote>',
-  '<ul>',
-  '<ol>',
-  '<li>',
-  '<br>',
-]
+const tags = new Set()
 
 const replaceFromTags = (text: string): string => {
   return text
